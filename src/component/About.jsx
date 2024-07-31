@@ -1,4 +1,9 @@
 function About() {
-  return <h1>About page</h1>;
+  return (
+    <div>
+      <img src="./image/image 54.png " alt="" />
+      <div></div>
+    </div>
+  );
 }
 export default About;

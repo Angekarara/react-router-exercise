@@ -4,8 +4,8 @@ import About from "./component/About";
 function App() {
   return (
     <Router>
-      <nav>
-        <Link to="/">Home</Link>
+      <nav className="bg-[#FFF7ED] flex justify-between text-black font-bold py-9 px-2">
+        <Link to="/">#VANILLE</Link>
         <Link to="/about">About</Link>
       </nav>
       <Routes>
