@@ -4,6 +4,7 @@ function Header() {
     <header className="bg-[#FFF7ED] flex justify-between text-black font-bold py-9 px-2">
       <Link to="/">#VANILLE</Link>
       <nav className="flex justify-between gap-4">
+        <Link to="/host">Host</Link>
         <Link to="/about">About</Link>
         <Link to="/vans">Vans</Link>
       </nav>
