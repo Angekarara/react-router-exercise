@@ -36,7 +36,31 @@ function Vans() {
     <div className="">
       <h1 className="text-3xl py-10 text-center">Explore our van options</h1>
       <div className="flex justify-evenly ">
-        <Link to="?type=simple" className="bg-[#FFEAD0] p-3 rounded-md">
+        <button
+          onClick={() => setSearchParams({ type: "simple" })}
+          className="bg-[#FFEAD0] p-3 rounded-md"
+        >
+          Simple
+        </button>
+        <button
+          onClick={() => setSearchParams({ type: "luxury" })}
+          className="bg-[#FFEAD0] p-3 rounded-md"
+        >
+          Luxury
+        </button>
+        <button
+          onClick={() => setSearchParams({ type: "rugged" })}
+          className="bg-[#FFEAD0] p-3 rounded-md"
+        >
+          Rugged
+        </button>
+        <button
+          onClick={() => setSearchParams({})}
+          className="underline underline-offset-1"
+        >
+          Clear filter
+        </button>
+        {/* <Link to="?type=simple" className="bg-[#FFEAD0] p-3 rounded-md">
           Simple
         </Link>
         <Link to="?type=luxury" className="bg-[#FFEAD0] p-3 rounded-md">
@@ -45,7 +69,7 @@ function Vans() {
         <Link to="?type=rugged" className="bg-[#FFEAD0] p-3 rounded-md">
           Rugged
         </Link>
-        <Link to="." className="underline underline-offset-1">Clear filter</Link>
+        <Link to="." className="underline underline-offset-1">Clear filter</Link> */}
       </div>
       <div className="flex flex-wrap gap-12 px-28 py-10 text-center">
         {vanElements}
