@@ -2,7 +2,7 @@ import React from 'react'
 
 function Reviews() {
   return (
-    <div>Reviews</div>
+    <div className="text-4xl font-semibold p-16">Reviews</div>
   )
 }
 
